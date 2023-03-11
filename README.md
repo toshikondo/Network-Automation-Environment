@@ -30,7 +30,7 @@
   
   
     
-- All files in Scripts and Output directories is untracked. 
-- Scripts and Output directories are mounted on this docker container.(/root/Scripts, /root/Output)
-- You can put your script files in Scripts directory.   
-- If you want to add a python library you need to add the package's name on requirements.txt
+- All files in __Scripts__ and __Output__ directories is untracked. 
+- __Scripts__ and __Output__ directories are mounted on this docker container.(__/root/Scripts__, __/root/Output__)
+- You can put your automation script files in __Scripts__ directory.   
+- If you want to add a python library you need to add the package's name on __requirements.txt__
