@@ -21,7 +21,7 @@
    >cd Network-Automation-Environment
 3. Set your own password. (If you did not edit the password defauld password is "mypassword")  
    &emsp;Edit password(PASSWD: \<YOUR PASSWORD\>) in docker-compose.yml to set your own password.  
-4. Build & RUN Docker container
+4. Build Docker image & RUN Docker container
    >docker compose up -d --build
 5. Login Docker container from remote device  
    &emsp;Login remote device  
