@@ -1,1 +1,21 @@
 # Network-Automation-Environment
+## This is a Docker container for Network Automation Environment
+### How to use __without docker-compose__
+1. Download file  
+   >git clone https://github.com/toshikondo/Network-Automation-Environment.git
+2. Move to Network-Automation-Environment directory  
+   >cd Network-Automation-Environment
+3. Build Docker image
+   >$docker build -f ./docker/Dockerfile ./docker --build-arg PASSWD=<YOUR PASSWORD> -t <docker image> 
+4. Run Docker container
+   >$docker run -p 53022:22 -v ./Scripts:/root/Scripts -v ./Output:/root/Output -d <docker image name or ID>  
+5. Login Docker container from remote device  
+   &emsp;Login remote device  
+   &emsp;ssh root@\<ip address of docker host\> -p 53022  
+   &emsp;password: \<YOUR PASSWORD\>   (If you did not set YOUR PASSWORD default password is "mypassword")
+
+
+- All files in Scripts and Output directories is untracked. 
+- Scripts and Output directories are mounted on this docker container.(/root/Scripts, /root/Output)
+- You can put your script files in Scripts directory.   
+- If you want to add a python library you need to add the package's name on requirements.txt
