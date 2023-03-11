@@ -1,0 +1,13 @@
+requests
+ncclient
+netmiko
+napalm
+meraki
+pan-os-python
+ipaddress
+nornir
+ansible==2.9.27
+jinja2
+pyang
+numpy
+pandas
