@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  network-automation-environment:
+    build: 
+      context: ./docker/
+      args:
+        PASSWD: mypassword
+    ports:
+      - '53022:22'
+    volumes:
+      - './Scripts:/root/Scripts'
+      - './Output:/root/Output'
