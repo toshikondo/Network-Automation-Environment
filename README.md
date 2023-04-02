@@ -6,9 +6,9 @@
 2. Move to Network-Automation-Environment directory  
    >cd Network-Automation-Environment
 3. Build Docker image
-   >$docker build -f ./docker/Dockerfile ./docker --build-arg PASSWD=<YOUR PASSWORD> -t <docker image> 
+   >$docker build -f ./docker/Dockerfile ./docker --build-arg PASSWD=\<YOUR PASSWORD\> -t \<docker image\> 
 4. Run Docker container
-   >$docker run -p 53022:22 -v ./Scripts:/root/Scripts -v ./Output:/root/Output -d <docker image name or ID>  
+   >$docker run -p 53022:22 -v ./Scripts:/root/Scripts -v ./Output:/root/Output -d \<docker image name or ID\>  
 5. Login Docker container from remote device  
    &emsp;Login remote device  
    &emsp;ssh root@\<ip address of docker host\> -p 53022  
@@ -20,7 +20,8 @@
 2. Move to Python3.9.16-Env directory
    >cd Network-Automation-Environment
 3. Set your own password. (If you did not edit the password defauld password is "mypassword")  
-   &emsp;Edit password(PASSWD: \<YOUR PASSWORD\>) in docker-compose.yml to set your own password.  
+   &emsp;Edit password(PASSWD: \<YOUR PASSWORD\>) in docker-compose.yml to set your own password.
+     
 4. Build Docker image & RUN Docker container
    >docker compose up -d --build
 5. Login Docker container from remote device  
